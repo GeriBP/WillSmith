@@ -19,7 +19,7 @@ public class Boss : MonoBehaviour, IEnemy
     private float startingHP = 4f;
 
     [SerializeField]
-    private GameObject minionPrefab;
+    private GameObject[] minionPrefab;
 
     [SerializeField]
     private GameObject pixelExplosion, bigExplosion;
@@ -198,7 +198,7 @@ public class Boss : MonoBehaviour, IEnemy
         {
             if (spawnPoint.name == "SpawnPoint")
             {
-                Instantiate(minionPrefab, spawnPoint.transform.position, Quaternion.identity);
+                Instantiate(minionPrefab[UnityEngine.Random.Range(0, minionPrefab.Length)], spawnPoint.transform.position, Quaternion.identity);
                 gameManager.enemiesAlive++;
             }
         }

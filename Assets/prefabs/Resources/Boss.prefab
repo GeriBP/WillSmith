@@ -691,8 +691,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 1816962119959342, guid: 9f9bdab2f1ec3844e8329ba86bda3493, type: 2}
   startingHP: 2
-  minionPrefab: {fileID: 1157614461832246, guid: b91e12f0041f23a46b196ce698772538,
-    type: 2}
+  minionPrefab:
+  - {fileID: 1739913256684348, guid: 7e693527b919ed0428dcadee61da0b78, type: 2}
+  - {fileID: 1157614461832246, guid: b91e12f0041f23a46b196ce698772538, type: 2}
+  - {fileID: 1977921387561154, guid: e6d98b938ba3caa4aa2a3e20f5d70026, type: 2}
   pixelExplosion: {fileID: 1511817286848110, guid: d7e57b4cb7e9e4b4ea326b14960d1cf3,
     type: 2}
   bigExplosion: {fileID: 1421413779020934, guid: 4ed5e67b9ce4afe40a63bf8e34f60245,
